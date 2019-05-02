@@ -1,0 +1,34 @@
+{
+  "name": "aiiterator-gameserver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./node_modules/aiiterator-core/src/gameserver gameserver.json",
+    "test": "NODE_ENV=test jest --watchAll",
+    "tc": "NODE_ENV=test jest --watchAll --coverage",
+    "coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^23.5.0",
+    "nodemon": "^1.18.3",
+    "should": "^13.2.3",
+    "sqlite3": "^4.0.2",
+    "supertest": "^3.3.0"
+  },
+  "dependencies": {
+    "aiiterator-core": "https://github.com/johanjordaan/aiiterator-core",
+    "aiiterator-game-ttt": "https://github.com/johanjordaan/aiiterator-game-ttt",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.3.0",
+    "lcg-rnd": "^0.0.8",
+    "moment": "^2.22.2",
+    "morgan": "^1.9.1",
+    "uuid": "^3.3.2"
+  },
+  "jest": {
+    "rootDir": "src"
+  }
+}
