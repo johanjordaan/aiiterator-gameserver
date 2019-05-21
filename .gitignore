@@ -5,3 +5,6 @@ coverage
 users.json
 stateDump.json
 error.log
+
+sonar.properties
+.scannerwork

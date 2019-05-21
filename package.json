@@ -7,7 +7,9 @@
     "start": "node ./node_modules/aiiterator-core/src/gameserver gameserver.json",
     "test": "cross-env NODE_ENV=test jest --watchAll",
     "tc": "cross-env NODE_ENV=test jest --watchAll --coverage",
-    "coverage": "cross-env NODE_ENV=test jest --coverage"
+    "coverage": "cross-env NODE_ENV=test jest --coverage",
+    "sonar":"../sonar-scanner-3.3.0.1492-macosx/bin/sonar-scanner -Dproject.settings=./sonar.properties",
+    "qc":"cross-env NODE_ENV=test jest --coverage && yarn sonar"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",

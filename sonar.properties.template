@@ -1,0 +1,9 @@
+sonar.updatecenter.activate=true
+sonar.projectKey=johanjordaan_aiiterator-gameserver
+sonar.organization=johanjordaan-github
+sonar.sources=./src
+sonar.host.url=https://sonarcloud.io
+sonar.login=***the sonarcloud key**
+sonar.javascript.lcov.reportPaths=./src/coverage/lcov.info
+sonar.sources=./src
+sonar.exclusions=**.test.js,**/__tests__/**
